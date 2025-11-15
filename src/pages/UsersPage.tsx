@@ -7,6 +7,6 @@ const UsersPage: FC = () => {
     </div>
   )
 }
-}
+
 
 export default UsersPage

@@ -1,0 +1,164 @@
+.login-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  min-height: 100vh;
+  background: #ffffff;
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.login-page__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5rem 6.25rem;
+  background-color: #fbfbfb;
+
+  @media (max-width: 960px) {
+    display: none;
+  }
+}
+
+.login-page__logo {
+  position: absolute;
+  top: 3.5rem;
+  left: 6.25rem;
+}
+
+.login-page__logo img {
+  height: 36px;
+}
+
+.login-page__illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+.login-page__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 4.5rem;
+  background-color: #ffffff;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 447px;
+}
+
+.login-form__heading {
+  margin-bottom: 2.5rem;
+}
+
+.login-form__title {
+  margin: 0 0 0.625rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: #213f7d;
+  letter-spacing: -4%;
+}
+
+.login-form__subtitle {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #545f7d;
+  font-weight: 400;
+}
+
+.login-form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.login-form__label {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #545f7d;
+}
+
+.login-form__input-wrapper {
+  position: relative;
+}
+
+.login-form__input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #545f7d26;
+  font-size: 0.875rem;
+  color: #545f7d;
+  outline: none;
+
+  &::placeholder {
+    color: #545f7d;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    border-color: #39cdcc;
+  }
+}
+
+.login-form__toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #39cdcc;
+  cursor: pointer;
+}
+
+.login-form__forgot-password {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #39cdcc;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.login-form__forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-form__button {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #39cdcc;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .login-page__right {
+    padding-inline: 1.5rem;
+  }
+
+  .login-form__title {
+    font-size: 2rem;
+  }
+}

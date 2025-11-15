@@ -1,0 +1,107 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar__brand {
+  padding: 2.5rem 2.75rem 2rem;
+}
+
+.sidebar__brand img {
+  height: 36px;
+}
+
+.sidebar__section {
+  padding-inline: 2.75rem;
+}
+
+.sidebar__switch-org {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  border: none;
+  background: none;
+  font-size: 0.875rem;
+  color: #213f7d;
+  cursor: pointer;
+}
+
+.sidebar__switch-org-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #213f7d;
+}
+
+.sidebar__switch-org-label {
+  flex: 1;
+  text-align: left;
+}
+
+.sidebar__chevron {
+  font-size: 0.75rem;
+}
+
+.sidebar__nav {
+  margin-top: 2.5rem;
+  padding-inline: 0;
+  opacity: 60%;
+}
+
+.sidebar__group-label {
+  margin: 0 0 0.75rem 2.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #545f7d;
+}
+
+.sidebar__item {
+  width: 100%;
+  padding: 0.75rem 2.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: #213f7d;
+  text-decoration: none;
+}
+
+.sidebar__item-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #213f7d;
+}
+
+.sidebar__item--nav {
+  cursor: pointer;
+}
+
+.sidebar__item--active {
+  position: relative;
+  background-color: #e5fafb;
+  color: #213f7d;
+}
+
+.sidebar__item--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #39cdcc;
+}
+
+.sidebar__item-label {
+  white-space: nowrap;
+}
